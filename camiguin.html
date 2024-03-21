@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+
+<style type="text/css">
+	button {
+		background-color:green ;
+		color: white;
+		border-radius: 6px;
+
+	}
+	input {
+		width: 300px;
+		padding: 13px;
+		border-radius: 6px;
+	}
+	body{
+		font-family: arial;
+	}
+</style>
+<div style="border: 3px solid black; width: 400px; padding: 15px; border-radius: 10px; height: 400px; background-image: url('download.jpg'); background-size: cover;" align="center">
+<script type="text/javascript">
+	function output() {
+		
+		var pname = document.getElementById('parent').value;
+		var cname = document.getElementById('child').value;
+			document.getElementById('display').innerHTML = "Salamat kaayo ante " + pname +" malingaw jud imong anak nga si " + cname;
+	}
+	function output2() {
+		
+		var pname = document.getElementById('parent').value;
+		var cname = document.getElementById('child').value;
+			document.getElementById('display').innerHTML = "Gina te " + pname +" panagsa ra bitaw ni. Dijud malingaw imong anak nga si " + cname;
+
+			
+	}
+
+</script>
+<body>
+
+<h1>Parent Consent Form</h1>
+<input type="text" placeholder="Parent's Name" id="parent"><br><br>
+<input type="text" name="" placeholder="Child's Name" id="child"><br>
+<p>Hi ante would you allow your child to have online class in Camiguin?</p>
+
+<button onclick="output()" style="padding: 10px; width:100px;">Yes</button>
+<button onclick="output2()" style="padding: 10px; width:100px;">No</button>
+<p id="display"></p>
+
+</div>
+
+</body>
+</html>
